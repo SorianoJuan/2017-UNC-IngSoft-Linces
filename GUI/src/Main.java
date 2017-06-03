@@ -2,6 +2,8 @@
  * Created by Torce on 02/06/2017.
  */
 
+//ESTO CREA LA VENTANA NADA MAS
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

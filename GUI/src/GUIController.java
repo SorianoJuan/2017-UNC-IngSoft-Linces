@@ -10,11 +10,15 @@ import javafx.scene.control.TextField;
 
 public class GUIController {
 
+    //Variables reales a ser desplegadas en la interfaz gráfica
     private int TemperaturaSensor = 30;
     private int HumedadSensor = 70;
 
+    //Variables ingresadas por usuario
     private int TemperaturaDeseada = 30;
     private int HumedadDeseada = 50;
+
+    //Variables de periféricos conectados
     private boolean AC = false;
     private boolean Estufa = false;
     private boolean Humidificador = false;
@@ -22,23 +26,30 @@ public class GUIController {
 
     @FXML
 
+    //Campos correspondientes a la vista Monitor
     public Label Temperatura1;
-    public Label Temperatura2;
     public Label Humedad1;
-    public Label Humedad2;
     public Label AC1;
-    public Label AC2;
     public Label Estufa1;
-    public Label Estufa2;
     public Label Humidificador1;
+
+    //Campos correspondientes a la vista Preset
+    public Label Temperatura2;
+    public Label Humedad2;
+    public Label AC2;
+    public Label Estufa2;
     public Label Humidificador2;
+
+    //Valores ingresados por el usuario en la vista Preset
     public TextField Tdeseada;
     public TextField Hdeseada;
+
+
+    //Setters y Getters
 
     public void setTemperaturaDeseada(int t) {
         TemperaturaDeseada = t;
     }
-
     public int getTemperaturaDeseada() {
         return TemperaturaDeseada;
     }
@@ -46,7 +57,6 @@ public class GUIController {
     public void setHumedadDeseada(int h) {
         HumedadDeseada = h;
     }
-
     public int getHumedadDeseada() {
         return HumedadDeseada;
     }
@@ -54,7 +64,6 @@ public class GUIController {
     public void setAC(boolean ac) {
         AC = ac;
     }
-
     public boolean getAC() {
         return AC;
     }
@@ -62,7 +71,6 @@ public class GUIController {
     public void setEstufa(boolean es) {
         Estufa = es;
     }
-
     public boolean getEstufa() {
         return Estufa;
     }
@@ -70,13 +78,13 @@ public class GUIController {
     public void setHumidificador(boolean hum) {
         Humidificador = hum;
     }
-
     public boolean getHumidificador() {
         return Humidificador;
     }
 
 
-    private void Valores() {
+    //Metodo para refrescar los valores de la interfaz grafica (esto iria dentro del observer)
+    private void actualizarValores() {
         Temperatura1.setText(Integer.toString(TemperaturaSensor));
         Temperatura2.setText(Integer.toString(TemperaturaSensor));
         Humedad1.setText(Integer.toString(HumedadSensor));
@@ -89,33 +97,38 @@ public class GUIController {
         Humidificador2.setText(humidificadorTextField());
     }
 
+    //Metodo que se ejecuta cuando se produce el evento de click en el boton de "Generar .txt"
     public void txtButtonClicked() {
         //ACA IRÍA GENERAR EL TXT
         System.out.println("Boton de txt clickeado");
-        Valores();
+        actualizarValores();
     }
 
+    //Metodo que se ejecuta cuando se produce el evento de click en el boton de "Enviar"
     public void enviarButtonClicked() {
         System.out.println("Boton de enviar clickeado");
         temperaturaTextField();
         humedadTextField();
-        Valores();
+        actualizarValores();
         simularT();
         simularH();
     }
 
+    //Actualiza el valor de TemperaturaDeseada si es que pasa la barrera de sanitizado de expresion
     private void temperaturaTextField() {
         if (sanitizarTemperatura(Tdeseada.getText())) {
             TemperaturaDeseada = Integer.parseInt(Tdeseada.getText());
         }
     }
 
+    //Actualiza el valor de HumedadDeseada si es que pasa la barrera de sanitizado de expresion
     private void humedadTextField() {
         if (sanitizarHumedad(Hdeseada.getText())) {
             HumedadDeseada = Integer.parseInt(Hdeseada.getText());
         }
     }
 
+    //Muestra ON u OFF en AC
     private String acTextField() {
         if (AC) {
             return "ON";
@@ -124,6 +137,7 @@ public class GUIController {
         }
     }
 
+    //Muestra ON u OFF en Estufa
     private String estufaTextField() {
         if (Estufa) {
             return "ON";
@@ -132,6 +146,7 @@ public class GUIController {
         }
     }
 
+    //Muestra ON u OFF en humidificador
     private String humidificadorTextField() {
         if (Humidificador) {
             return "ON";
@@ -140,16 +155,19 @@ public class GUIController {
         }
     }
 
+    //Sanitizado de expresion de Temperatura
     private boolean sanitizarTemperatura(String T) {
         int Temp = Integer.parseInt(T);
         return (Temp >= 0 && Temp <= 40);
     }
 
+    //Sanitizado de expresion de Humedad
     private boolean sanitizarHumedad(String H) {
         int Hum = Integer.parseInt(H);
         return (Hum >= 0 && Hum <= 100);
     }
 
+    //Simulacion precaria para ver como varía la cosa
     public void simularT() {
         while (TemperaturaDeseada > TemperaturaSensor) {
             System.out.println("aumentando T");
@@ -157,12 +175,12 @@ public class GUIController {
             Estufa = true;
             TemperaturaSensor++;
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
                 Estufa = false;
-                Valores();
+                actualizarValores();
             }
         }
         while (TemperaturaDeseada < TemperaturaSensor) {
@@ -176,7 +194,7 @@ public class GUIController {
                 e.printStackTrace();
             } finally {
                 AC = false;
-                Valores();
+                actualizarValores();
             }
         }
     }
@@ -192,7 +210,7 @@ public class GUIController {
                 e.printStackTrace();
             } finally {
                 Humidificador = false;
-                Valores();
+                actualizarValores();
             }
         }
         while (HumedadDeseada < HumedadSensor) {
@@ -205,7 +223,7 @@ public class GUIController {
                 e.printStackTrace();
             } finally {
                 Humidificador = false;
-                Valores();
+                actualizarValores();
             }
         }
     }
