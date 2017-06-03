@@ -60,7 +60,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="600.0">
                <children>
-                  <Button layoutX="504.0" layoutY="305.0" mnemonicParsing="false" onAction="#submitButtonClicked" prefHeight="52.0" prefWidth="82.0" text="Enviar" />
+                  <Button layoutX="504.0" layoutY="305.0" mnemonicParsing="false" onAction="#enviarButtonClicked" prefHeight="52.0" prefWidth="82.0" text="Enviar" />
                   <SplitPane prefHeight="371.0" prefWidth="213.0">
                      <items>
                         <GridPane>
