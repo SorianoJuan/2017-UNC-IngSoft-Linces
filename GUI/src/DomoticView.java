@@ -45,6 +45,22 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
 
 
     @Override
+    public void display() {
+        //ACA IRIAN LOS VALORES DE LOS SENSORES, EN DONDE SE ALMACENAN?
+        //Temperatura1.setText(Integer.toString());
+        //Temperatura2.setText(Integer.toString());
+        //Humedad1.setText(Integer.toString());
+        //Humedad2.setText(Integer.toString());
+        AC1.setText(acTextField());
+        AC2.setText(acTextField());
+        Estufa1.setText(estufaTextField());
+        Estufa2.setText(estufaTextField());
+        Humidificador1.setText(humidificadorTextField());
+        Humidificador2.setText(humidificadorTextField());
+    }
+
+
+    @Override
     //Actualiza valor de la temperatura
     public void updateTemperatura() {
         if (sanitizarTemperatura(Tdeseada.getText())) {
