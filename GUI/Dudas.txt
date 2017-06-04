@@ -10,3 +10,5 @@ Las variables de temperatura deseada y medida se almacenan en el modelo?
 Los notify van en el modelo?
 La logica de los botones va en la vista? Si tengo que generar un txt como es la seguidilla?
 
+
+
