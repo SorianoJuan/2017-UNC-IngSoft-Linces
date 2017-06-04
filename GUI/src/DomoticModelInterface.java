@@ -1,6 +1,7 @@
 /**
  * Created by Torce on 04/06/2017.
  */
+
 public interface DomoticModelInterface {
 
     void setTemperaturaDeseada(int t);
