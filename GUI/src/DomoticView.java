@@ -1,10 +1,12 @@
+/**
+ * Created by Torce on 04/06/2017.
+ */
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-/**
- * Created by Torce on 04/06/2017.
- */
+
 public class DomoticView implements DomoticViewInterface,TemperaturaObserver, HumedadObserver {
 
     DomoticControllerInterface controller;
@@ -29,6 +31,7 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
     public TextField Tdeseada;
     public TextField Hdeseada;
 
+    //Constructor de la clase DomoticView
     public DomoticView(DomoticController controller, DomoticModelInterface model){
         this.controller = controller;
         this.model = model;
@@ -36,15 +39,13 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
         model.registerObserver((HumedadObserver) this);
     }
 
-
-    @Override
-    public void updateHumedad() {
-        if (sanitizarHumedad(Hdeseada.getText())) {
-            model.setHumedadDeseada((Integer.parseInt(Hdeseada.getText())));
-        }
+    public void crearDomoticGUI(){
+        //ACÁ SE CREARÍA LA GUI
     }
 
+
     @Override
+    //Actualiza valor de la temperatura
     public void updateTemperatura() {
         if (sanitizarTemperatura(Tdeseada.getText())) {
             model.setTemperaturaDeseada(Integer.parseInt(Tdeseada.getText()));
@@ -57,10 +58,58 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
         return (Temp >= 0 && Temp <= 40);
     }
 
+    @Override
+    public void updateHumedad() {
+        if (sanitizarHumedad(Hdeseada.getText())) {
+            model.setHumedadDeseada((Integer.parseInt(Hdeseada.getText())));
+        }
+    }
+
+
     //Sanitizado de expresion de Humedad
     public boolean sanitizarHumedad(String H) {
         int Hum = Integer.parseInt(H);
         return (Hum >= 0 && Hum <= 100);
     }
+
+    //Muestra ON u OFF en AC
+    public String acTextField() {
+        if (model.getAC()) {
+            return "ON";
+        } else {
+            return "OFF";
+        }
+    }
+
+    //Muestra ON u OFF en Estufa
+    public String estufaTextField() {
+        if (model.getEstufa()) {
+            return "ON";
+        } else {
+            return "OFF";
+        }
+    }
+
+    //Muestra ON u OFF en humidificador
+    public String humidificadorTextField() {
+        if (model.getHumidificador()) {
+            return "ON";
+        } else {
+            return "OFF";
+        }
+    }
+
+
+    @Override
+    public void enviarButtonClicked() {
+        System.out.println("Boton de enviar clickeado");
+    }
+
+    @Override
+    public void txtButtonClicked() {
+        System.out.println("Boton de txt clickeado");
+    }
+
+
 }
 
