@@ -54,33 +54,17 @@ public class GUIController {
         return TemperaturaDeseada;
     }
 
-    public void setHumedadDeseada(int h) {
-        HumedadDeseada = h;
-    }
-    public int getHumedadDeseada() {
-        return HumedadDeseada;
-    }
+    public void setHumedadDeseada(int h) {HumedadDeseada = h;}
+    public int getHumedadDeseada() {return HumedadDeseada;}
 
-    public void setAC(boolean ac) {
-        AC = ac;
-    }
-    public boolean getAC() {
-        return AC;
-    }
+    public void setAC(boolean ac) {AC = ac;}
+    public boolean getAC() {return AC;}
 
-    public void setEstufa(boolean es) {
-        Estufa = es;
-    }
-    public boolean getEstufa() {
-        return Estufa;
-    }
+    public void setEstufa(boolean es) {Estufa = es;}
+    public boolean getEstufa() {return Estufa;}
 
-    public void setHumidificador(boolean hum) {
-        Humidificador = hum;
-    }
-    public boolean getHumidificador() {
-        return Humidificador;
-    }
+    public void setHumidificador(boolean hum) {Humidificador = hum;}
+    public boolean getHumidificador() {return Humidificador;}
 
 
     //Metodo para refrescar los valores de la interfaz grafica (esto iria dentro del observer)
@@ -189,7 +173,7 @@ public class GUIController {
             Estufa = false;
             TemperaturaSensor--;
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
