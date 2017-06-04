@@ -20,8 +20,9 @@ public interface DomoticModelInterface {
 
     void registerObserver(TemperaturaObserver o);
     void removeObserver(TemperaturaObserver o);
+    void notifyTemperaturaObservers();
 
     void registerObserver(HumedadObserver o);
     void removeObserver(HumedadObserver o);
-
+    void notifyHumedadObservers();
 }

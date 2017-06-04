@@ -65,7 +65,13 @@ public class DomoticModel implements DomoticModelInterface{
         }
     }
 
-
+    @Override
+    public void notifyTemperaturaObservers() {
+        for(int i = 0; i < temperaturaObservers.size(); i++) {
+            TemperaturaObserver observer = (TemperaturaObserver)temperaturaObservers.get(i);
+            observer.updateTemperatura();
+        }
+    }
 
     //Observers de humedad
     @Override
@@ -76,6 +82,14 @@ public class DomoticModel implements DomoticModelInterface{
         int i = humedadObservers.indexOf(o);
         if (i >= 0) {
             humedadObservers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyHumedadObservers() {
+        for(int i = 0; i < humedadObservers.size(); i++) {
+            TemperaturaObserver observer = (TemperaturaObserver)temperaturaObservers.get(i);
+            observer.updateTemperatura();
         }
     }
 }
