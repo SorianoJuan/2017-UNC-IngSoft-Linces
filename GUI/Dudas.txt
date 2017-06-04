@@ -5,7 +5,7 @@ En donde se almacenarian los valores de los sensores?
 La vista (constructor que tengo en el main) se genera en DomoticView?
 En el controller que va? los sanitizar expresiones donde van?
 Las interfaces que metodos llevan si o si?
-Quien seria el subject?(ver diagrama)
+Quien seria el subject?(ver diagrama) <-----------el objeto que contiene los datos almacenados (sommerville pag .191)
 Las variables de temperatura deseada y medida se almacenan en el modelo?
 Los notify van en el modelo?
 La logica de los botones va en la vista? Si tengo que generar un txt como es la seguidilla?
