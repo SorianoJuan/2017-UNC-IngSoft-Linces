@@ -4,6 +4,9 @@
 
 public interface DomoticModelInterface {
 
+    int getTemperaturaSensor();
+    int getHumedadSensor();
+
     void setTemperaturaDeseada(int t);
     int getTemperaturaDeseada();
 

@@ -28,8 +28,8 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
     public Label Humidificador2;
 
     //Valores ingresados por el usuario en la vista Preset
-    public TextField Tdeseada;
-    public TextField Hdeseada;
+    private TextField Tdeseada;
+    private TextField Hdeseada;
 
     //Constructor de la clase DomoticView
     public DomoticView(DomoticController controller, DomoticModelInterface model){
@@ -62,58 +62,23 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
 
     @Override
     //Actualiza valor de la temperatura
-    public void updateTemperatura() {
-        if (sanitizarTemperatura(Tdeseada.getText())) {
-            model.setTemperaturaDeseada(Integer.parseInt(Tdeseada.getText()));
-        }
-    }
-
-    //Sanitizado de expresion de Temperatura
-    public boolean sanitizarTemperatura(String T) {
-        int Temp = Integer.parseInt(T);
-        return (Temp >= 0 && Temp <= 40);
-    }
+    public void updateTemperatura() {controller.setearTemperatura((Integer.parseInt(Tdeseada.getText())));}
+    //REVISAR ACA
 
     @Override
     public void updateHumedad() {
-        if (sanitizarHumedad(Hdeseada.getText())) {
-            model.setHumedadDeseada((Integer.parseInt(Hdeseada.getText())));
-        }
+        controller.setearHumedad((Integer.parseInt(Hdeseada.getText())));
     }
 
-
-    //Sanitizado de expresion de Humedad
-    public boolean sanitizarHumedad(String H) {
-        int Hum = Integer.parseInt(H);
-        return (Hum >= 0 && Hum <= 100);
-    }
 
     //Muestra ON u OFF en AC
-    public String acTextField() {
-        if (model.getAC()) {
-            return "ON";
-        } else {
-            return "OFF";
-        }
-    }
+    public String acTextField() {return controller.estadoAC(); }
 
     //Muestra ON u OFF en Estufa
-    public String estufaTextField() {
-        if (model.getEstufa()) {
-            return "ON";
-        } else {
-            return "OFF";
-        }
-    }
+    public String estufaTextField() {return controller.estadoEstufa();}
 
     //Muestra ON u OFF en humidificador
-    public String humidificadorTextField() {
-        if (model.getHumidificador()) {
-            return "ON";
-        } else {
-            return "OFF";
-        }
-    }
+    public String humidificadorTextField() { return controller.estadoHumidificador(); }
 
 
     @Override

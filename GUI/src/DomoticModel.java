@@ -23,6 +23,12 @@ public class DomoticModel implements DomoticModelInterface{
     private boolean Humidificador = false;
 
     @Override
+    public int getTemperaturaSensor() { return TemperaturaSensor;}
+
+    @Override
+    public int getHumedadSensor() { return HumedadSensor;}
+
+    @Override
     public void setTemperaturaDeseada(int t) {TemperaturaDeseada=t;}
 
     @Override
