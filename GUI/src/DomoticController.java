@@ -7,7 +7,7 @@ public class DomoticController implements DomoticControllerInterface{
     DomoticViewInterface view;
 
     public DomoticController() {
-        //this.model = model;
+        this.model = model;
         view = new DomoticView(this, model);
         view.crearDomoticGUI();
     }
@@ -31,7 +31,7 @@ public class DomoticController implements DomoticControllerInterface{
 
     @Override
     public void setearHumedad(int hum) {
-        if(sanitizarTemperatura(hum)){
+        if(sanitizarHumedad(hum)){
             model.setHumedadDeseada(hum);
         }
         else{
@@ -72,7 +72,7 @@ public class DomoticController implements DomoticControllerInterface{
         }
     }
 
-
-
-
+    public void generarTxt(){
+        System.out.println("generando txt");
+    }
 }

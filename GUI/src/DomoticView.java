@@ -1,6 +1,12 @@
 /**
  * Created by Torce on 04/06/2017.
  */
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -41,6 +47,7 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
 
     public void crearDomoticGUI(){
         //ACÁ SE CREARÍA LA GUI
+        Main.launch();
     }
 
 
@@ -121,7 +128,7 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
     @Override
     public void txtButtonClicked() {
         System.out.println("Boton de txt clickeado");
+        controller.generarTxt();
     }
-
 }
 

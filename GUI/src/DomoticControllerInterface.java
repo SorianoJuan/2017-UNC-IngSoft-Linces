@@ -7,4 +7,5 @@ public interface DomoticControllerInterface {
     String estadoAC();
     String estadoEstufa();
     String estadoHumidificador();
+    void generarTxt();
 }

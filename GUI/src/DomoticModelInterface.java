@@ -43,5 +43,3 @@ public interface DomoticModelInterface {
     void notifyHumidificadorObservers();
 
 }
-
-//FAJAR ESTO, SACAR SETTERS Y GETTERS
