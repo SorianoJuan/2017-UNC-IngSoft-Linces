@@ -7,12 +7,10 @@ public class DomoticController implements DomoticControllerInterface{
     DomoticViewInterface view;
 
     public DomoticController() {
-        this.model = model;
+        //this.model = model;
         view = new DomoticView(this, model);
         view.crearDomoticGUI();
     }
-
-
 
     @Override
     public void setearTemperatura(int t){

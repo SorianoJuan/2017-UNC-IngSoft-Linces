@@ -8,6 +8,9 @@ public class DomoticModel implements DomoticModelInterface{
     //ArrayLists de observers
     ArrayList temperaturaObservers = new ArrayList();
     ArrayList humedadObservers = new ArrayList();
+    ArrayList acObservers = new ArrayList();
+    ArrayList estufaObservers = new ArrayList();
+    ArrayList humidificadorObservers = new ArrayList();
 
     //Variables reales a ser desplegadas en la interfaz gráfica
     private int TemperaturaSensor = 30;
@@ -98,4 +101,75 @@ public class DomoticModel implements DomoticModelInterface{
             observer.updateTemperatura();
         }
     }
+
+    //Observers de AC
+    @Override
+    public void registerObserver(ACObserver o) {acObservers.add(o);}
+
+    @Override
+    public void removeObserver(ACObserver o) {
+        int i = acObservers.indexOf(o);
+        if (i >= 0) {
+            acObservers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyACObservers() {
+        for(int i = 0; i < acObservers.size(); i++) {
+            ACObserver observer = (ACObserver)acObservers.get(i);
+            observer.updateAC();
+        }
+    }
+
+    //Observers de Estufa
+    @Override
+    public void registerObserver(EstufaObserver o) {estufaObservers.add(o);}
+
+    @Override
+    public void removeObserver(EstufaObserver o) {
+        int i = estufaObservers.indexOf(o);
+        if (i >= 0) {
+            estufaObservers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyEstufaObservers() {
+        for(int i = 0; i < estufaObservers.size(); i++) {
+            EstufaObserver observer = (EstufaObserver)estufaObservers.get(i);
+            observer.updateEstufa();
+        }
+    }
+
+    //Observers de Humidificador
+    @Override
+    public void registerObserver(HumidificadorObserver o) {humidificadorObservers.add(o);}
+
+    @Override
+    public void removeObserver(HumidificadorObserver o) {
+        int i = humidificadorObservers.indexOf(o);
+        if (i >= 0) {
+            humidificadorObservers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyHumidificadorObservers() {
+        for(int i = 0; i < humidificadorObservers.size(); i++) {
+            HumidificadorObserver observer = (HumidificadorObserver)humidificadorObservers.get(i);
+            observer.updateHumidificador();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

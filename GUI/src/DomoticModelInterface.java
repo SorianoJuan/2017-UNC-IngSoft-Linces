@@ -29,4 +29,19 @@ public interface DomoticModelInterface {
     void registerObserver(HumedadObserver o);
     void removeObserver(HumedadObserver o);
     void notifyHumedadObservers();
+
+    void registerObserver(ACObserver o);
+    void removeObserver(ACObserver o);
+    void notifyACObservers();
+
+    void registerObserver(EstufaObserver o);
+    void removeObserver(EstufaObserver o);
+    void notifyEstufaObservers();
+
+    void registerObserver(HumidificadorObserver o);
+    void removeObserver(HumidificadorObserver o);
+    void notifyHumidificadorObservers();
+
 }
+
+//FAJAR ESTO, SACAR SETTERS Y GETTERS
