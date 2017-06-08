@@ -10,11 +10,11 @@ public class DomoticModel implements DomoticModelInterface {
     public DomoticModel(){}
 
     //ArrayLists de observers
-    ArrayList temperaturaObservers = new ArrayList();
-    ArrayList humedadObservers = new ArrayList();
-    ArrayList acObservers = new ArrayList();
-    ArrayList estufaObservers = new ArrayList();
-    ArrayList humidificadorObservers = new ArrayList();
+    private ArrayList temperaturaObservers = new ArrayList();
+    private ArrayList humedadObservers = new ArrayList();
+    private ArrayList acObservers = new ArrayList();
+    private ArrayList estufaObservers = new ArrayList();
+    private ArrayList humidificadorObservers = new ArrayList();
 
     //Variables reales a ser desplegadas en la interfaz gráfica
     private int TemperaturaSensor = 30;
