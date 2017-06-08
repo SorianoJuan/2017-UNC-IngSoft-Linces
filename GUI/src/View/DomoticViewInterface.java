@@ -1,3 +1,5 @@
+package View;
+
 /**
  * Created by Torce on 04/06/2017.
  */
@@ -8,5 +10,4 @@ public interface DomoticViewInterface {
     String humidificadorTextField();
     void enviarButtonClicked();
     void txtButtonClicked();
-    void crearDomoticGUI();
 }

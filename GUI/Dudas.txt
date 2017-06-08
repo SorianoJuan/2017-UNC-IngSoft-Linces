@@ -2,7 +2,7 @@ Preguntas:
 
 Setters y getters en el model o en el controller?
 En donde se almacenarian los valores de los sensores?
-La vista (constructor que tengo en el main) se genera en DomoticView?
+La vista (constructor que tengo en el main) se genera en View.DomoticView?
 En el controller que va? los sanitizar expresiones donde van?
 Las interfaces que metodos llevan si o si?
 Quien seria el subject?(ver diagrama) <-----------el objeto que contiene los datos almacenados (sommerville pag .191)

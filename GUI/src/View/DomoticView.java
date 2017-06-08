@@ -1,18 +1,22 @@
-/**
- * Created by Torce on 04/06/2017.
- */
+package View;
+
+import Controller.*;
+import Model.*;
+import Observers.*;
 
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 
-public class DomoticView implements DomoticViewInterface,TemperaturaObserver, HumedadObserver, ACObserver, EstufaObserver, HumidificadorObserver {
+public class DomoticView implements DomoticViewInterface, TemperaturaObserver, HumedadObserver, ACObserver, EstufaObserver, HumidificadorObserver {
 
     DomoticControllerInterface controller;
     DomoticModelInterface model;
 
     @FXML
+
     //Campos correspondientes a la vista Monitor
     public Label Temperatura1;
     public Label Humedad1;
@@ -28,19 +32,43 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
     public Label Humidificador2;
 
     //Valores ingresados por el usuario en la vista Preset
-    private TextField Tdeseada;
-    private TextField Hdeseada;
+    public TextField Tdeseada;
+    public TextField Hdeseada;
 
-    //Constructor de la clase DomoticView
+    public DomoticView(){}           //<<<<<<ESTO ES TURBIO, POR EL FXLOADER
+
+    /*
+        //Intento de crear la setear la vista con el constructor vacio
+        public void setView(Controller.DomoticController controller, Model.DomoticModelInterface model){
+            this.controller = controller;
+            this.model = model;
+            model.registerObserver((Observers.TemperaturaObserver) this);
+            model.registerObserver((Observers.HumedadObserver) this);
+            model.registerObserver((Observers.ACObserver) this);
+            model.registerObserver((Observers.EstufaObserver) this);
+            model.registerObserver((Observers.HumidificadorObserver) this);
+        }
+    */
+
+    //Constructor de la clase View.DomoticView con parametros
     public DomoticView(DomoticController controller, DomoticModelInterface model){
         this.controller = controller;
         this.model = model;
         model.registerObserver((TemperaturaObserver) this);
         model.registerObserver((HumedadObserver) this);
+        model.registerObserver((ACObserver) this);
+        model.registerObserver((EstufaObserver) this);
+        model.registerObserver((HumidificadorObserver) this);
     }
 
-    public void crearDomoticGUI(){
-        //ACÁ SE CREARÍA LA GUI
+    //Intento de setear el controller a mano
+    public void crearDomoticGUI(Stage primaryStage) throws Exception{
+     /*   FXMLLoader loader = new FXMLLoader(getClass().getResource("DomoticGUI.fxml"));
+        loader.setController(this);
+        TabPane tabPane = loader.load();
+        Scene scene = new Scene (tabPane, 600, 400);
+        primaryStage.setScene(scene);
+        primaryStage.show();*/
     }
 
 
@@ -121,7 +149,7 @@ public class DomoticView implements DomoticViewInterface,TemperaturaObserver, Hu
     @Override
     public void txtButtonClicked() {
         System.out.println("Boton de txt clickeado");
+        controller.generarTxt();
     }
-
 }
 

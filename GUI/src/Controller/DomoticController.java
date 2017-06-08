@@ -1,15 +1,22 @@
-/**
- * Created by Torce on 04/06/2017.
- */
-public class DomoticController implements DomoticControllerInterface{
+package Controller;
+
+import Model.*;
+import View.*;
+
+public class DomoticController implements DomoticControllerInterface {
 
     DomoticModelInterface model;
-    DomoticViewInterface view;
+    DomoticView view;
 
-    public DomoticController() {
-        //this.model = model;
+    public DomoticController(DomoticModel model) {
+        this.model = model;
         view = new DomoticView(this, model);
-        view.crearDomoticGUI();
+        //PARA CONSTRUCTOR SIN PARÁMETROS:
+        //view = new View.DomoticView();
+        //view.setView(this, model);
+
+
+        //view.crearDomoticGUI();
     }
 
     @Override
@@ -31,7 +38,7 @@ public class DomoticController implements DomoticControllerInterface{
 
     @Override
     public void setearHumedad(int hum) {
-        if(sanitizarTemperatura(hum)){
+        if(sanitizarHumedad(hum)){
             model.setHumedadDeseada(hum);
         }
         else{
@@ -72,7 +79,7 @@ public class DomoticController implements DomoticControllerInterface{
         }
     }
 
-
-
-
+    public void generarTxt(){
+        System.out.println("generando txt");
+    }
 }

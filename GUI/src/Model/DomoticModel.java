@@ -1,9 +1,13 @@
+package Model;
+
+import Observers.*;
+
 import java.util.ArrayList;
 
-/**
- * Created by Torce on 04/06/2017.
- */
-public class DomoticModel implements DomoticModelInterface{
+
+public class DomoticModel implements DomoticModelInterface {
+
+    public DomoticModel(){}
 
     //ArrayLists de observers
     ArrayList temperaturaObservers = new ArrayList();
