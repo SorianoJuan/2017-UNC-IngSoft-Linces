@@ -1,6 +1,10 @@
 package Version1;
 
 //import javafx.event.ActionEvent;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.File;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -84,6 +88,7 @@ public class GUIController {
         //ACA IRÍA GENERAR EL TXT
         System.out.println("Boton de txt clickeado");
         actualizarValores();
+        generarTxt();
     }
 
     //Metodo que se ejecuta cuando se produce el evento de click en el boton de "Enviar"
@@ -148,6 +153,24 @@ public class GUIController {
         int Hum = Integer.parseInt(H);
         return (Hum >= 0 && Hum <= 100);
     }
+
+    private void generarTxt(){
+        System.out.println("gaviota txt");
+        new File("EstadoActual.txt");
+        PrintWriter printWriter = null;
+        try {
+            printWriter = new PrintWriter("EstadoActual.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        printWriter.println("TemperaturaSensor");
+        printWriter.println(Integer.toString(TemperaturaSensor));
+        printWriter.println("Humedad");
+        printWriter.println(Integer.toString(HumedadSensor));
+        printWriter.close();
+    }
+
+
 
     //Simulacion precaria para ver como varía la cosa
     public void simularT() {

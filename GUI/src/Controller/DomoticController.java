@@ -3,6 +3,10 @@ package Controller;
 import Model.*;
 import View.*;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.File;
+
 public class DomoticController implements DomoticControllerInterface {
 
     DomoticModelInterface model;
@@ -14,7 +18,6 @@ public class DomoticController implements DomoticControllerInterface {
         //PARA CONSTRUCTOR SIN PARÁMETROS:
         //view = new View.DomoticView();
         //view.setView(this, model);
-
 
         //view.crearDomoticGUI();
     }
@@ -81,5 +84,23 @@ public class DomoticController implements DomoticControllerInterface {
 
     public void generarTxt(){
         System.out.println("generando txt");
+        new File("C:/Users/Torce/Desktop/DomoLinxPrueba/DomoLinx/GUI/EstadoActual.txt");
+        PrintWriter printWriter = null;
+         try {
+            printWriter = new PrintWriter("EstadoActual.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        printWriter.println("Temperatura medida por el sensor");
+        printWriter.println(Integer.toString(model.getTemperaturaSensor()));
+        printWriter.println("Humedad medida por el sensor");
+        printWriter.println(Integer.toString(model.getHumedadSensor()));
+        printWriter.println("Estado actual del AC");
+        printWriter.println(estadoAC());
+        printWriter.println("Estado actual de la estufa");
+        printWriter.println(estadoEstufa());
+        printWriter.println("Estado actual del humidificador");
+        printWriter.println(estadoHumidificador());
+        printWriter.close();
     }
 }
