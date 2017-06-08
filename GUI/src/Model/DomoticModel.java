@@ -165,15 +165,4 @@ public class DomoticModel implements DomoticModelInterface {
             observer.updateHumidificador();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 }

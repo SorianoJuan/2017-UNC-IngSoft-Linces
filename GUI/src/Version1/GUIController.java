@@ -1,6 +1,4 @@
-package Version1; /**
- * Created by Torce on 02/06/2017.
- */
+package Version1;
 
 //import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
