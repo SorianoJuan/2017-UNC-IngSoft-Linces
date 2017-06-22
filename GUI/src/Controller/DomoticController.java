@@ -34,7 +34,7 @@ public class DomoticController implements DomoticControllerInterface {
     }
 
     //Sanitizado de expresion de Temperatura
-    private boolean sanitizarTemperatura(int T) {
+    boolean sanitizarTemperatura(int T) {
         return (T >= 0 && T <= 40);
     }
 
