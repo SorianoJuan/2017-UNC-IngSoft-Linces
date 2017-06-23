@@ -6,8 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUI/Model/DomoticModel.class" afterPath="$PROJECT_DIR$/out/production/GUI/Model/DomoticModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GUI/View/DomoticView.class" afterPath="$PROJECT_DIR$/out/production/GUI/View/DomoticView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/DomoticModel.java" afterPath="$PROJECT_DIR$/src/Model/DomoticModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" afterPath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1020,7 +1018,7 @@
       <workItem from="1498167144659" duration="8818000" />
       <workItem from="1498184225069" duration="36000" />
       <workItem from="1498184773462" duration="6445000" />
-      <workItem from="1498247340302" duration="1893000" />
+      <workItem from="1498247340302" duration="1920000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;agregando algunos unit test&quot;">
       <created>1498175684359</created>
@@ -1071,7 +1069,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498235862715</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&quot;agregando algunos unit test&quot;">
+      <created>1498249256429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1498249256429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1107,7 +1112,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40492000" />
+    <option name="totallyTimeSpent" value="40519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
