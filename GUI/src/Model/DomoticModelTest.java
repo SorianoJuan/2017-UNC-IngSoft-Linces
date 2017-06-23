@@ -61,4 +61,23 @@ public class DomoticModelTest {
         assertEquals(101,model.getHumedadDeseada());
     }
 
+    @Test
+    public void test_setHumedadDeseada_valor_Valido(){
+        model.setHumedadDeseada(2);
+        assertEquals(2,model.getHumedadDeseada());
+    }
+
+    @Test
+    public void test_setHumedadDeseada_valor_maximo(){
+        model.setHumedadDeseada(100);
+        assertEquals(100,model.getHumedadDeseada());
+     }
+
+    @Test
+    public void test_getHumedadDeseada(){
+        model.setHumedadDeseada(50);
+        assertEquals(50,model.getHumedadDeseada());
+     }
+
+
 }

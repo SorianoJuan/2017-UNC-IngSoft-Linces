@@ -51,12 +51,12 @@ public class DomoticModel implements DomoticModelInterface {
     @Override
     public int getTemperaturaDeseada() {return TemperaturaDeseada;}
 
+    //Testeado en DomoticModelTest
     @Override
     public void setHumedadDeseada(int h) {
         if(sanitizarHuumedad(h)){
             HumedadDeseada=h;
         }
-
     }
 
     private boolean sanitizarHuumedad(int h) {
@@ -66,9 +66,11 @@ public class DomoticModel implements DomoticModelInterface {
         else return true;
     }
 
+    //Testeado en DomoticModelTest
     @Override
     public int getHumedadDeseada() {return HumedadDeseada;}
 
+    //------------------------------------------------------------------------------------------------------------------
     @Override
     public void setAC(boolean ac) {AC=ac;}
 
