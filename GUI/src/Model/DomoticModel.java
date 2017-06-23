@@ -36,6 +36,7 @@ public class DomoticModel implements DomoticModelInterface {
     @Override
     public int getHumedadSensor() { return HumedadSensor;}
 
+    //Testeado en DomoticModelTest
     @Override
     public void setTemperaturaDeseada(int t) {
         if(sanitizarTemperatura(t)) {
