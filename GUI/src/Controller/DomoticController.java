@@ -51,9 +51,16 @@ public class DomoticController implements DomoticControllerInterface {
     }
 
     //Sanitizado de expresion de Humedad
-    private boolean sanitizarHumedad(int H) {
-        return (H >= 0 && H <= 100);
-    }
+    boolean sanitizarHumedad(int H) {
+        //return (H >= 0 && H <= 100);
+        if(H>=0 && H<=100)
+            return true;
+            else{
+                return false;
+            }
+        }
+
+
 
     //Muestra ON u OFF en AC
     public String estadoAC() {
