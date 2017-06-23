@@ -1,13 +1,17 @@
 package Model;
 
 import Observers.*;
+import Simulador.*;
 
 import java.util.ArrayList;
 
 
 public class DomoticModel implements DomoticModelInterface {
 
-    public DomoticModel(){}
+    public DomoticModel(){
+       // new Thread(new SimuladorH(this)).start();
+       // new Thread(new SimuladorT(this)).start();
+    }
 
     //ArrayLists de observers
     private ArrayList temperaturaObservers = new ArrayList();
@@ -22,7 +26,7 @@ public class DomoticModel implements DomoticModelInterface {
 
     //Variables ingresadas por usuario
     private int TemperaturaDeseada = 30;
-    private int HumedadDeseada = 50;
+    private int HumedadDeseada = 70;
 
     //Variables de periféricos conectados
     private boolean AC = false;
@@ -33,8 +37,12 @@ public class DomoticModel implements DomoticModelInterface {
     @Override
     public int getTemperaturaSensor() { return TemperaturaSensor;}
 
+    public void setHumedadSensor(int h) {HumedadSensor = h;}
+
     @Override
     public int getHumedadSensor() { return HumedadSensor;}
+
+    public void setTemperaturaSensor(int t) {TemperaturaSensor = t;}
 
     @Override
     public void setTemperaturaDeseada(int t) {
@@ -55,6 +63,9 @@ public class DomoticModel implements DomoticModelInterface {
     public void setHumedadDeseada(int h) {
         if(sanitizarHuumedad(h)){
             HumedadDeseada=h;
+            System.out.println("en el model antes");
+            System.out.println(HumedadDeseada);
+
         }
 
     }
@@ -66,11 +77,6 @@ public class DomoticModel implements DomoticModelInterface {
         else return true;
     }
 
-    public void notifyTodos(){
-        notifyHumidificadorObservers();
-        notifyHumedadObservers();
-        notifyEstufaObservers();
-    }
 
     @Override
     public int getHumedadDeseada() {return HumedadDeseada;}
@@ -109,6 +115,7 @@ public class DomoticModel implements DomoticModelInterface {
     @Override
     public void notifyTemperaturaObservers() {
         for(int i = 0; i < temperaturaObservers.size(); i++) {
+            System.out.println("esto si anda");
             TemperaturaObserver observer = (TemperaturaObserver)temperaturaObservers.get(i);
             observer.updateTemperatura();
         }
@@ -129,8 +136,8 @@ public class DomoticModel implements DomoticModelInterface {
     @Override
     public void notifyHumedadObservers() {
         for(int i = 0; i < humedadObservers.size(); i++) {
-            TemperaturaObserver observer = (TemperaturaObserver)temperaturaObservers.get(i);
-            observer.updateTemperatura();
+            HumedadObserver observer = (HumedadObserver)humedadObservers.get(i);
+            observer.updateHumedad();
         }
     }
 

@@ -64,28 +64,6 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
             model.registerObserver((Observers.HumidificadorObserver) this);
         }
 
-
-    //Constructor de la clase View.DomoticView con parametros
-  /*  public DomoticView(DomoticController controller, DomoticModelInterface model){
-        this.controller = controller;
-        this.model = model;
-        model.registerObserver((TemperaturaObserver) this);
-        model.registerObserver((HumedadObserver) this);
-        model.registerObserver((ACObserver) this);
-        model.registerObserver((EstufaObserver) this);
-        model.registerObserver((HumidificadorObserver) this);
-    }*/
-
-    //Intento de setear el controller a mano
-    public void crearDomoticGUI(Stage primaryStage) throws Exception{
-     /*   FXMLLoader loader = new FXMLLoader(getClass().getResource("DomoticGUI.fxml"));
-        loader.setController(this);
-        TabPane tabPane = loader.load();
-        Scene scene = new Scene (tabPane, 600, 400);
-        primaryStage.setScene(scene);
-        primaryStage.show();*/
-    }
-
     //UPDATES DE LOS OBSERVERS
     @Override
     public void updateHumedad() {
@@ -119,7 +97,9 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
     }
 
     //Actualiza valor de la temperaturaDeseada del modelo por medio del controlador
-    public void actualizarTemperaturaDeseada() {getInstance().controller.setearTemperatura((Integer.parseInt(Tdeseada.getText())));}
+    public void actualizarTemperaturaDeseada() {
+            getInstance().controller.setearTemperatura((Integer.parseInt(Tdeseada.getText())));
+        }
 
     //Actualiza valor de la temperaturaDeseada del modelo por medio del controlador
     public void actualizarHumedadDeseada() {

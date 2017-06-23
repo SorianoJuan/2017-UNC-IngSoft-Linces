@@ -1,37 +1,47 @@
-/*
+package Simulador;
+
+import Model.*;
+
 public class SimuladorH implements Runnable{
 
-    public void run(){
-        simularH();
+    DomoticModel model;
+
+    public SimuladorH(DomoticModel model){
+        this.model = model;
     }
 
-    private void simularH(){
-        while (HumedadDeseada > HumedadSensor) {
-            System.out.println("aumentando H");
-            Humidificador = true;
-            HumedadSensor++;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
-                Humidificador = false;
-                Valores();
+    public void run() {
+        System.out.println(model.getHumedadDeseada());
+        while (true) {
+            System.out.println(model.getHumedadDeseada());
+            while (model.getHumedadDeseada() > model.getHumedadSensor()) {
+                System.out.println("aumentando H");
+                model.setHumidificador(true);
+                model.setHumedadSensor(model.getHumedadSensor() + 1);
+                try {
+                    Thread.sleep(1000);
+                    model.notifyHumidificadorObservers();
+                    model.notifyHumedadObservers();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        }
-        while (HumedadDeseada < HumedadSensor) {
-            System.out.println("disminuyendo H");
-            Humidificador = false;
-            HumedadSensor--;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
-                Humidificador = false;
-                Valores();
+            model.setHumidificador(false);
+
+            while (model.getHumedadDeseada() < model.getHumedadSensor()) {
+                System.out.println("disminuyendo H");
+                model.setHumidificador(false);
+                model.setHumedadSensor(model.getHumedadSensor() - 1);
+                try {
+                    Thread.sleep(1000);
+                    model.notifyHumidificadorObservers();
+                    model.notifyHumedadObservers();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
+            model.setHumidificador(false);
         }
+
     }
 }
-*/

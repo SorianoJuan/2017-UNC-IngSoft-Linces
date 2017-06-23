@@ -14,12 +14,8 @@ public class DomoticController implements DomoticControllerInterface {
 
     public DomoticController(DomoticModel model) {
         this.model = model;
-       // view = new DomoticView(this, model);
-        //PARA CONSTRUCTOR SIN PARÁMETROS:
         view = View.DomoticView.getInstance();
         view.setView(this, model);
-        System.out.println("Creando view");
-        //view.crearDomoticGUI();
     }
 
     @Override
@@ -42,6 +38,7 @@ public class DomoticController implements DomoticControllerInterface {
     @Override
     public void setearHumedad(int hum) {
         if(sanitizarHumedad(hum)){
+            System.out.println("en el controller");
             model.setHumedadDeseada(hum);
         }
         else{
