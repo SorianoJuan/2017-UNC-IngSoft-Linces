@@ -14,10 +14,10 @@ public class DomoticController implements DomoticControllerInterface {
 
     public DomoticController(DomoticModel model) {
         this.model = model;
-        view = new DomoticView(this, model);
+       // view = new DomoticView(this, model);
         //PARA CONSTRUCTOR SIN PARÁMETROS:
-        //view = new View.DomoticView();
-        //view.setView(this, model);
+        view = new View.DomoticView();
+        view.setView(this, model);
 
         //view.crearDomoticGUI();
     }

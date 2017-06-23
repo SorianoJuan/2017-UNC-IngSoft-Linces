@@ -37,7 +37,6 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
 
     public DomoticView(){}           //<<<<<<ESTO ES TURBIO, POR EL FXLOADER
 
-    /*
         //Intento de crear la setear la vista con el constructor vacio
         public void setView(Controller.DomoticController controller, Model.DomoticModelInterface model){
             this.controller = controller;
@@ -48,10 +47,10 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
             model.registerObserver((Observers.EstufaObserver) this);
             model.registerObserver((Observers.HumidificadorObserver) this);
         }
-    */
+
 
     //Constructor de la clase View.DomoticView con parametros
-    public DomoticView(DomoticController controller, DomoticModelInterface model){
+  /*  public DomoticView(DomoticController controller, DomoticModelInterface model){
         this.controller = controller;
         this.model = model;
         model.registerObserver((TemperaturaObserver) this);
@@ -59,7 +58,7 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
         model.registerObserver((ACObserver) this);
         model.registerObserver((EstufaObserver) this);
         model.registerObserver((HumidificadorObserver) this);
-    }
+    }*/
 
     //Intento de setear el controller a mano
     public void crearDomoticGUI(Stage primaryStage) throws Exception{
