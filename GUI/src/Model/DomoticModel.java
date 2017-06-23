@@ -29,6 +29,7 @@ public class DomoticModel implements DomoticModelInterface {
     private boolean Estufa = false;
     private boolean Humidificador = false;
 
+//----------------------------------------------------------------------------------------------------------------------
     @Override
     public int getTemperaturaSensor() { return TemperaturaSensor;}
 
@@ -46,11 +47,24 @@ public class DomoticModel implements DomoticModelInterface {
         return (T >= 0 && T <= 40);
     }
 
+    //Testeado en DomoticModelTest
     @Override
     public int getTemperaturaDeseada() {return TemperaturaDeseada;}
 
     @Override
-    public void setHumedadDeseada(int h) {HumedadDeseada=h;}
+    public void setHumedadDeseada(int h) {
+        if(sanitizarHuumedad(h)){
+            HumedadDeseada=h;
+        }
+
+    }
+
+    private boolean sanitizarHuumedad(int h) {
+        if(h<0 || h>100){
+            return false;
+        }
+        else return true;
+    }
 
     @Override
     public int getHumedadDeseada() {return HumedadDeseada;}

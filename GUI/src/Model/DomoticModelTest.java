@@ -40,7 +40,7 @@ public class DomoticModelTest {
         assertEquals(0,model.getTemperaturaDeseada());
     }
 
-    //Este test debe fallar porque se intenta introducion un valor de temp invalido.
+    //Este test debe fallar porque se intenta introducir un valor de temp invalido.
     @Test
     public void test_setTemperaturaDeseada_negativa(){
 
@@ -48,5 +48,17 @@ public class DomoticModelTest {
         assertEquals(-1,model.getTemperaturaDeseada());
     }
 
+    @Test
+    public void test_getTemperaturaDeseada(){
+        model.setTemperaturaDeseada(5);
+        assertEquals(5, model.getTemperaturaDeseada());
+    }
+
+    //Este test debe fallar porque se intenta ingresar un valor de humedad no valido
+    @Test
+    public void test_setHumedadDeseada(){
+        model.setHumedadDeseada(101);
+        assertEquals(101,model.getHumedadDeseada());
+    }
 
 }
