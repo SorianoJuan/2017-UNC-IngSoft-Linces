@@ -43,10 +43,10 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
     }
 
         //Intento de crear la setear la vista con el constructor vacio
-        public void setView(Controller.DomoticController controller, Model.DomoticModelInterface model){
+        public void setView(Controller.DomoticController controllera, Model.DomoticModelInterface modela){
             System.out.println("Seteando");
-            this.controller = controller;
-            this.model = model;
+            this.controller = controllera;
+            this.model = modela;
             model.registerObserver((Observers.TemperaturaObserver) this);
             model.registerObserver((Observers.HumedadObserver) this);
             model.registerObserver((Observers.ACObserver) this);
@@ -92,18 +92,17 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
         Humidificador2.setText(humidificadorTextField());*/
     }
 
-
     //UPDATES DE LOS OBSERVERS
     @Override
     public void updateHumedad() {
-        Humedad1.setText(Integer.toString(model.getHumedadSensor()));
-        Humedad2.setText(Integer.toString(model.getHumedadSensor()));
+        Humedad1.setText(Integer.toString(getInstance().model.getHumedadSensor()));
+        Humedad2.setText(Integer.toString(getInstance().model.getHumedadSensor()));
     }
 
     @Override
     public void updateTemperatura() {
-        Temperatura1.setText(Integer.toString(model.getTemperaturaSensor()));
-        Temperatura2.setText(Integer.toString(model.getTemperaturaSensor()));
+        Temperatura1.setText(Integer.toString(getInstance().model.getTemperaturaSensor()));
+        Temperatura2.setText(Integer.toString(getInstance().model.getTemperaturaSensor()));
     }
 
 
@@ -126,22 +125,22 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
     }
 
     //Actualiza valor de la temperaturaDeseada del modelo por medio del controlador
-    public void actualizarTemperaturaDeseada() {controller.setearTemperatura((Integer.parseInt(Tdeseada.getText())));}
+    public void actualizarTemperaturaDeseada() {getInstance().controller.setearTemperatura((Integer.parseInt(Tdeseada.getText())));}
 
     //Actualiza valor de la temperaturaDeseada del modelo por medio del controlador
     public void actualizarHumedadDeseada() {
-        controller.setearHumedad((Integer.parseInt(Hdeseada.getText())));
+        getInstance().controller.setearHumedad((Integer.parseInt(Hdeseada.getText())));
     }
 
 
     //Muestra ON u OFF en AC
-    public String acTextField() {return controller.estadoAC(); }
+    public String acTextField() {return getInstance().controller.estadoAC(); }
 
     //Muestra ON u OFF en Estufa
-    public String estufaTextField() {return controller.estadoEstufa();}
+    public String estufaTextField() {return getInstance().controller.estadoEstufa();}
 
     //Muestra ON u OFF en humidificador
-    public String humidificadorTextField() { return controller.estadoHumidificador(); }
+    public String humidificadorTextField() { return getInstance().controller.estadoHumidificador(); }
 
 
     @Override
@@ -154,7 +153,7 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
     @Override
     public void txtButtonClicked() {
         System.out.println("Boton de txt clickeado");
-        controller.generarTxt();
+        getInstance().controller.generarTxt();
     }
 }
 
