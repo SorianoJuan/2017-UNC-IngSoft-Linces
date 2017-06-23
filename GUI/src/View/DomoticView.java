@@ -36,7 +36,17 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
     public TextField Tdeseada;
     public TextField Hdeseada;
 
-    public DomoticView(){}           //<<<<<<ESTO ES TURBIO, POR EL FXLOADER
+    //Constructor de la clase View
+    public DomoticView(){}
+
+    //Para inicializar el sistema
+    public void initialize() {
+        updateHumedad();
+        updateAC();
+        updateHumidificador();
+        updateEstufa();
+        updateTemperatura();
+    }
 
     public static DomoticView getInstance() {
         return INSTANCE;
@@ -74,22 +84,6 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
         Scene scene = new Scene (tabPane, 600, 400);
         primaryStage.setScene(scene);
         primaryStage.show();*/
-    }
-
-
-    @Override
-    public void display() {
-        //ACA IRIAN LOS VALORES DE LOS SENSORES, EN DONDE SE ALMACENAN?
-       /* Temperatura1.setText(Integer.toString());
-        Temperatura2.setText(Integer.toString());
-        Humedad1.setText(Integer.toString());
-        Humedad2.setText(Integer.toString());
-        AC1.setText(acTextField());
-        AC2.setText(acTextField());
-        Estufa1.setText(estufaTextField());
-        Estufa2.setText(estufaTextField());
-        Humidificador1.setText(humidificadorTextField());
-        Humidificador2.setText(humidificadorTextField());*/
     }
 
     //UPDATES DE LOS OBSERVERS
