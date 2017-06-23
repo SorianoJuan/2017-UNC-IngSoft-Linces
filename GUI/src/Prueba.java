@@ -1,5 +1,6 @@
 import Controller.DomoticController;
 import Model.DomoticModel;
+import View.DomoticView;
 import javafx.application.Application;
 
 public class Prueba {
@@ -9,5 +10,6 @@ public class Prueba {
 
         //Para correr la vista
         Application.launch(Main.class, args);
+      //  DomoticView.getInstance().setView(domoticController,domoticModel);
     }
 }

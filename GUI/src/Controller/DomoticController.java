@@ -16,9 +16,9 @@ public class DomoticController implements DomoticControllerInterface {
         this.model = model;
        // view = new DomoticView(this, model);
         //PARA CONSTRUCTOR SIN PARÁMETROS:
-        view = new View.DomoticView();
+        view = View.DomoticView.getInstance();
         view.setView(this, model);
-
+        System.out.println("Creando view");
         //view.crearDomoticGUI();
     }
 

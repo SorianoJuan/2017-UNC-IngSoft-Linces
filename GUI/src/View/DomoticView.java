@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 
 public class DomoticView implements DomoticViewInterface, TemperaturaObserver, HumedadObserver, ACObserver, EstufaObserver, HumidificadorObserver {
 
+    private static final DomoticView INSTANCE = new DomoticView();
     DomoticControllerInterface controller;
     DomoticModelInterface model;
 
@@ -37,8 +38,13 @@ public class DomoticView implements DomoticViewInterface, TemperaturaObserver, H
 
     public DomoticView(){}           //<<<<<<ESTO ES TURBIO, POR EL FXLOADER
 
+    public static DomoticView getInstance() {
+        return INSTANCE;
+    }
+
         //Intento de crear la setear la vista con el constructor vacio
         public void setView(Controller.DomoticController controller, Model.DomoticModelInterface model){
+            System.out.println("Seteando");
             this.controller = controller;
             this.model = model;
             model.registerObserver((Observers.TemperaturaObserver) this);
