@@ -6,6 +6,7 @@ import javafx.concurrent.Task;
 
 public class SimuladorSensores {
 
+    private Thread th;
     public enum SIMULATOR_TYPE {
         SIMULADOR_HUM, SIMULADOR_TEMP
     }
@@ -40,7 +41,7 @@ public class SimuladorSensores {
                 return null;
             }
         };
-        Thread th = new Thread(task);
+        th = new Thread(task);
         th.setDaemon(true);
         th.start();
     }
@@ -56,6 +57,7 @@ public class SimuladorSensores {
 
         if (model.getHumedadDeseada() == model.getHumedadSensor()) {
             model.setHumidificador(false);
+            th.stop();
         }
 
         model.notifyHumedadObservers();
@@ -77,11 +79,11 @@ public class SimuladorSensores {
         if (model.getTemperaturaDeseada() == model.getTemperaturaSensor()) {
             model.setEstufa(false);
             model.setAC(false);
+            th.stop();
         }
 
         model.notifyTemperaturaObservers();
         model.notifyEstufaObservers();
         model.notifyACObservers();
-
     }
 }
