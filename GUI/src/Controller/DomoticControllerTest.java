@@ -59,6 +59,8 @@ public class DomoticControllerTest {
         assertEquals(4, model.getTemperaturaDeseada());
     }
 
+
+
     @Test
     public void test_sanitizarHumedad_minima(){
         assertTrue(controlador.sanitizarHumedad(0));
@@ -79,12 +81,7 @@ public class DomoticControllerTest {
         assertFalse(controlador.sanitizarHumedad(101));
     }
 
-    //Esto deberia fallar porque la humedad no puede ser negativa
-    @Test
-    public void testSetearHumedad() {
-        model.setHumedadDeseada(-10);
-        assertEquals(-10, model.getHumedadDeseada());
-    }
+
 
     @Test
     public void testStanitizarHumedad(){
