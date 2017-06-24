@@ -38,7 +38,6 @@ public class DomoticController implements DomoticControllerInterface {
     @Override
     public void setearHumedad(int hum) {
         if(sanitizarHumedad(hum)){
-            System.out.println("en el controller");
             model.setHumedadDeseada(hum);
         }
         else{
@@ -49,12 +48,7 @@ public class DomoticController implements DomoticControllerInterface {
 
     //Sanitizado de expresion de Humedad
     boolean sanitizarHumedad(int H) {
-        //return (H >= 0 && H <= 100);
-        if(H>=0 && H<=100)
-            return true;
-            else{
-                return false;
-            }
+        return (H >= 0 && H <= 100);
         }
 
 

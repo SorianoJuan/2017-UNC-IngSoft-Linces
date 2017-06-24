@@ -11,11 +11,16 @@ public class SimuladorH implements Runnable{
     }
 
     public void run() {
-        System.out.println(model.getHumedadDeseada());
         while (true) {
+            System.out.println("Deseada");
             System.out.println(model.getHumedadDeseada());
+            System.out.println("Sensor");
+            System.out.println(model.getHumedadSensor());
+            System.out.println("Deseada");
+            System.out.println(model.getHumedadDeseada());
+            System.out.println("Sensor");
+            System.out.println(model.getHumedadSensor());
             while (model.getHumedadDeseada() > model.getHumedadSensor()) {
-                System.out.println("aumentando H");
                 model.setHumidificador(true);
                 model.setHumedadSensor(model.getHumedadSensor() + 1);
                 try {

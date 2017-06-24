@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public class DomoticModel implements DomoticModelInterface {
 
     public DomoticModel(){
-       // new Thread(new SimuladorH(this)).start();
-       // new Thread(new SimuladorT(this)).start();
+        new Thread(new SimuladorH(this)).start();
+        new Thread(new SimuladorT(this)).start();
     }
 
     //ArrayLists de observers
@@ -45,38 +45,14 @@ public class DomoticModel implements DomoticModelInterface {
     public void setTemperaturaSensor(int t) {TemperaturaSensor = t;}
 
     @Override
-    public void setTemperaturaDeseada(int t) {
-        if(sanitizarTemperatura(t)) {
-            TemperaturaDeseada = t;
-        }
-    }
-
-    boolean sanitizarTemperatura(int T) {
-        return (T >= 0 && T <= 40);
-    }
+    public void setTemperaturaDeseada(int t) {TemperaturaDeseada = t;}
 
     //Testeado en DomoticModelTest
     @Override
     public int getTemperaturaDeseada() {return TemperaturaDeseada;}
 
     @Override
-    public void setHumedadDeseada(int h) {
-        if(sanitizarHuumedad(h)){
-            HumedadDeseada=h;
-            System.out.println("en el model antes");
-            System.out.println(HumedadDeseada);
-
-        }
-
-    }
-
-    private boolean sanitizarHuumedad(int h) {
-        if(h<0 || h>100){
-            return false;
-        }
-        else return true;
-    }
-
+    public void setHumedadDeseada(int h) {HumedadDeseada=h;}
 
     @Override
     public int getHumedadDeseada() {return HumedadDeseada;}
