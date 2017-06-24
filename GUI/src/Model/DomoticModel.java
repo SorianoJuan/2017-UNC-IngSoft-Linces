@@ -8,11 +8,6 @@ import java.util.ArrayList;
 
 public class DomoticModel implements DomoticModelInterface {
 
-    public DomoticModel(){
-        new Thread(new SimuladorH(this)).start();
-        new Thread(new SimuladorT(this)).start();
-    }
-
     //ArrayLists de observers
     private ArrayList temperaturaObservers = new ArrayList();
     private ArrayList humedadObservers = new ArrayList();
@@ -33,6 +28,15 @@ public class DomoticModel implements DomoticModelInterface {
     private boolean Estufa = false;
     private boolean Humidificador = false;
 
+    //Simuladores
+    private SimuladorSensores simuladorHumedad;
+    private SimuladorSensores simuladorTemperatura;
+
+    public DomoticModel(){
+        this.simuladorHumedad = new SimuladorSensores(this, SimuladorSensores.SIMULATOR_TYPE.SIMULADOR_HUM);
+        this.simuladorTemperatura = new SimuladorSensores(this, SimuladorSensores.SIMULATOR_TYPE.SIMULADOR_TEMP);
+    }
+
 //----------------------------------------------------------------------------------------------------------------------
     @Override
     public int getTemperaturaSensor() { return TemperaturaSensor;}
@@ -45,14 +49,20 @@ public class DomoticModel implements DomoticModelInterface {
     public void setTemperaturaSensor(int t) {TemperaturaSensor = t;}
 
     @Override
-    public void setTemperaturaDeseada(int t) {TemperaturaDeseada = t;}
+    public void setTemperaturaDeseada(int t) {
+        TemperaturaDeseada = t;
+        this.simuladorTemperatura.simulate();
+    }
 
     //Testeado en DomoticModelTest
     @Override
     public int getTemperaturaDeseada() {return TemperaturaDeseada;}
 
     @Override
-    public void setHumedadDeseada(int h) {HumedadDeseada=h;}
+    public void setHumedadDeseada(int h) {
+        HumedadDeseada = h;
+        this.simuladorHumedad.simulate();
+    }
 
     @Override
     public int getHumedadDeseada() {return HumedadDeseada;}

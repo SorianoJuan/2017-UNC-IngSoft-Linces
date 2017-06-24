@@ -14,8 +14,6 @@ public class DomoticController implements DomoticControllerInterface {
 
     public DomoticController(DomoticModel model) {
         this.model = model;
-        view = View.DomoticView.getInstance();
-        view.setView(this, model);
     }
 
     @Override
