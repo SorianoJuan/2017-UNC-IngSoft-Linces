@@ -62,7 +62,12 @@ public class DomoticModelTest {
     public void testSetAc(){
         model.setTemperaturaSensor(30);
         model.setTemperaturaDeseada(24);
-        assertTrue(model.getAC());
+         try {
+             Thread.sleep(1000);
+         } catch (InterruptedException e) {
+             e.printStackTrace();
+         }
+         assertTrue(model.getAC());
      }
 
 

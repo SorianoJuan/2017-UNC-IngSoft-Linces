@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f980dc47-16c1-45c2-adb6-d4b07303e238" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Controller/DomoticController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Controller/DomoticControllerInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Controller/DomoticControllerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/DomoticGUI.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Model/DomoticModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Model/DomoticModelInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Model/DomoticModelTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Observers/ACObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Observers/EstufaObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Observers/HumedadObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Observers/HumidificadorObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Observers/TemperaturaObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Simulador/SimuladorSensores$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Simulador/SimuladorSensores$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Simulador/SimuladorSensores$SIMULATOR_TYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Simulador/SimuladorSensores.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Version1/GUI.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Version1/GUIController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/Version1/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/View/DomoticView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GUI/View/DomoticViewInterface.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" afterPath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,8 +75,8 @@
       <file leaf-file-name="DomoticModelTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/DomoticModelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="506">
+              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -252,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/DomoticView.java" />
         <option value="$PROJECT_DIR$/src/Controller/DomoticControllerInterface.java" />
         <option value="$PROJECT_DIR$/EstadoActual.txt" />
-        <option value="$PROJECT_DIR$/src/Model/DomoticModelTest.java" />
         <option value="$PROJECT_DIR$/src/Model/DomoticModelInterface.java" />
         <option value="$PROJECT_DIR$/src/View/DomoticView.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -260,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/Controller/DomoticControllerTest.java" />
         <option value="$PROJECT_DIR$/src/Version1/GUIController.java" />
         <option value="$PROJECT_DIR$/src/Controller/DomoticController.java" />
+        <option value="$PROJECT_DIR$/src/Model/DomoticModelTest.java" />
       </list>
     </option>
   </component>
@@ -1142,7 +1121,7 @@
       <workItem from="1498247340302" duration="6623000" />
       <workItem from="1498361142443" duration="824000" />
       <workItem from="1498362101620" duration="296000" />
-      <workItem from="1498362460232" duration="266000" />
+      <workItem from="1498362460232" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;agregando algunos unit test&quot;">
       <created>1498175684359</created>
@@ -1228,7 +1207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498361619064</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="borrado out/production/gui">
+      <created>1498362740165</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1498362740165</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1264,7 +1250,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46608000" />
+    <option name="totallyTimeSpent" value="46700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1277,23 +1263,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32677597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32689655" sideWeight="0.50555557" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27322406" sideWeight="0.49444443" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27322406" sideWeight="0.49444443" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32421875" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32421875" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1305,7 +1292,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32677597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" x="925" y="169" width="397" height="488" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1320,7 +1306,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;agregando algunos unit test&quot;" />
     <MESSAGE value="&quot;Cambios a los directorios y limpieza de archivos&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Cambios a los directorios y limpieza de archivos&quot;" />
+    <MESSAGE value="borrado out/production/gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="borrado out/production/gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1539,8 +1526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DomoticModelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="506">
+          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
           <folding />
         </state>
       </provider>
