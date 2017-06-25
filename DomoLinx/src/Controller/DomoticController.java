@@ -1,7 +1,6 @@
 package Controller;
 
 import Model.*;
-import View.*;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

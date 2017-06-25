@@ -26,14 +26,11 @@ public class SimuladorSensores {
                 int valorDeseado = type == SIMULATOR_TYPE.SIMULADOR_HUM ? model.getHumedadDeseada() : model.getTemperaturaDeseada();
                 int valorSensor = type == SIMULATOR_TYPE.SIMULADOR_HUM ? model.getHumedadSensor() : model.getTemperaturaSensor();
                 while (valorDeseado != valorSensor) {
-                    Platform.runLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (type == SIMULATOR_TYPE.SIMULADOR_HUM) {
-                                notifyHumedadChanges();
-                            } else if (type == SIMULATOR_TYPE.SIMULADOR_TEMP) {
-                                notifyTemperatureChanges();
-                            }
+                    Platform.runLater(() -> {
+                        if (type == SIMULATOR_TYPE.SIMULADOR_HUM) {
+                            notifyHumedadChanges();
+                        } else if (type == SIMULATOR_TYPE.SIMULADOR_TEMP) {
+                            notifyTemperatureChanges();
                         }
                     });
                     Thread.sleep(1000);
@@ -57,7 +54,7 @@ public class SimuladorSensores {
 
         if (model.getHumedadDeseada() == model.getHumedadSensor()) {
             model.setHumidificador(false);
-            th.stop();
+            th.interrupt();
         }
 
         model.notifyHumedadObservers();
@@ -79,7 +76,7 @@ public class SimuladorSensores {
         if (model.getTemperaturaDeseada() == model.getTemperaturaSensor()) {
             model.setEstufa(false);
             model.setAC(false);
-            th.stop();
+            th.interrupt();
         }
 
         model.notifyTemperaturaObservers();
