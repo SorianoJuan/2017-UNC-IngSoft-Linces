@@ -58,5 +58,12 @@ public class DomoticModelTest {
         assertEquals(50,model.getHumedadDeseada());
      }
 
+     @Test
+    public void testSetAc(){
+        model.setTemperaturaSensor(30);
+        model.setTemperaturaDeseada(24);
+        assertTrue(model.getAC());
+     }
+
 
 }
