@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 public class DomoticControllerTest {
 
-    DomoticModel model= new DomoticModel();
+    DomoticModel model= DomoticModel.getInstance();
     DomoticController controlador= new DomoticController(model);
 
     /*

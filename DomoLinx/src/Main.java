@@ -14,7 +14,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("DomoticGUI.fxml"));
-        DomoticModel domoticModel = new DomoticModel();
+        DomoticModel domoticModel = DomoticModel.getInstance();
         DomoticController domoticController = new DomoticController(domoticModel);
         DomoticView domoticView = new DomoticView(domoticController , domoticModel);
         loader.setController(domoticView);

@@ -7,12 +7,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by DAVID on 23/06/2017.
- */
 public class DomoticModelTest {
 
-    private DomoticModel model=new DomoticModel();
+    private DomoticModel model=DomoticModel.getInstance();
     private DomoticController controlador=new DomoticController(model);
 
     @Test

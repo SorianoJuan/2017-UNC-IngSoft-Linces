@@ -8,6 +8,13 @@ import java.util.ArrayList;
 
 public class DomoticModel implements DomoticModelInterface {
 
+    private static DomoticModel Instance = new DomoticModel();
+
+    public static DomoticModel getInstance() {
+        return Instance;
+    }
+
+
     //ArrayLists de observers
     private ArrayList temperaturaObservers = new ArrayList();
     private ArrayList humedadObservers = new ArrayList();
@@ -33,7 +40,7 @@ public class DomoticModel implements DomoticModelInterface {
     private SimuladorSensores simuladorTemperatura;
 
     //Constructor de DomoticModel
-    public DomoticModel(){
+    private DomoticModel(){
         this.simuladorHumedad = new SimuladorSensores(this, SimuladorSensores.SIMULATOR_TYPE.SIMULADOR_HUM);
         this.simuladorTemperatura = new SimuladorSensores(this, SimuladorSensores.SIMULATOR_TYPE.SIMULADOR_TEMP);
     }
