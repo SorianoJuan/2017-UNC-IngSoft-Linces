@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4fa3cb1-12d2-4db4-a491-3380f6571223" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GUI/src/Main.java" afterPath="$PROJECT_DIR$/GUI/src/GUILauncher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GUI/src/Prueba.java" afterPath="$PROJECT_DIR$/GUI/src/Main.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Controller/DomoticController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Controller/DomoticControllerInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Controller/DomoticControllerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/DomoticGUI.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Model/DomoticModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Model/DomoticModelInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Model/DomoticModelTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Observers/ACObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Observers/EstufaObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Observers/HumedadObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Observers/HumidificadorObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Observers/TemperaturaObserver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Simulador/SimuladorSensores.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Version1/GUI.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Version1/GUIController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/Version1/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/View/DomoticView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI/View/DomoticViewInterface.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI/src/Controller/DomoticController.java" afterPath="$PROJECT_DIR$/GUI/src/Controller/DomoticController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI/src/Model/DomoticModel.java" afterPath="$PROJECT_DIR$/GUI/src/Model/DomoticModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI/src/Simulador/SimuladorH.java" afterPath="$PROJECT_DIR$/GUI/src/Simulador/SimuladorH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI/src/View/DomoticView.java" afterPath="$PROJECT_DIR$/GUI/src/View/DomoticView.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,63 +36,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DomoticModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/Model/DomoticModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DomoticView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/View/DomoticView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DomoticController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimuladorH.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GUI/src/Simulador/SimuladorH.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,7 +69,7 @@
         <option value="$PROJECT_DIR$/GUI/src/DomoticViewInterface.java" />
         <option value="$PROJECT_DIR$/GUI/Dudas.txt" />
         <option value="$PROJECT_DIR$/GUI/src/GUIController.java" />
-        <option value="$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DJView.java" />
+        <option value="$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DJView.java" />
         <option value="$PROJECT_DIR$/GUI/src/ACObserver.java" />
         <option value="$PROJECT_DIR$/GUI/src/HumidificadorObserver.java" />
         <option value="$PROJECT_DIR$/GUI/src/EstufaObserver.java" />
@@ -165,6 +122,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,7 +223,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -273,7 +230,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DomoLinx" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -706,6 +663,10 @@
       <workItem from="1498256024863" duration="3452000" />
       <workItem from="1498259561036" duration="26000" />
       <workItem from="1498260602408" duration="3737000" />
+      <workItem from="1498360832231" duration="14000" />
+      <workItem from="1498360868762" duration="18000" />
+      <workItem from="1498360998967" duration="13000" />
+      <workItem from="1498361121476" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="prueba intellij">
       <created>1496551766682</created>
@@ -802,28 +763,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28879000" />
+    <option name="totallyTimeSpent" value="28943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33442622" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -835,6 +795,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -899,90 +860,18 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GUI/src/pruebagithub.java" />
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/BeatObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ViewModelSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/MyDosifierModelTestDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartTestDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ModelSelectorTestDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierViewTestDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ControllerModelSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ControllerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierModelInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/BeatObserver.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ViewModelSelector.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/MyDosifierModelTestDrive.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartAdapter.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartTestDrive.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ModelSelectorTestDrive.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierViewTestDrive.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierSimulator.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ControllerModelSelector.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierAdapter.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/ControllerInterface.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierModelInterface.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/HumedadObserver.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/SimuladorT.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/SimuladorH.java" />
@@ -996,49 +885,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/Dudas.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/Dudas.txt" />
     <entry file="file://$PROJECT_DIR$/GUI/src/GUIController.java" />
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartModelInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DJView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2057">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartModelInterface.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartModel.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/HeartController.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DJView.java" />
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/DosifierView.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticModelInterface.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/HumidificadorObserver.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/EstufaObserver.java" />
@@ -1046,153 +899,37 @@
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticViewInterface.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticController.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticModel.java" />
-    <entry file="file://$PROJECT_DIR$/../../Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/AllWorkingTestDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Software 2016/IngSoft-2016-SoftDuino/src/main/java/djview/AllWorkingTestDrive.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticControllerInterface.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/TemperaturaObserver.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/DomoticView.java" />
-    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/DomoticGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="271" lean-forward="false" selection-start-line="18" selection-start-column="271" selection-end-line="18" selection-end-column="271" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/GUILauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/DomoticGUI.fxml" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/GUILauncher.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/View/DomoticViewInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Version1/GUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Simulador/SimuladorT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Model/DomoticModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/src/View/DomoticViewInterface.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Version1/GUI.fxml" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Simulador/SimuladorT.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Model/DomoticModelTest.java" />
     <entry file="file://$PROJECT_DIR$/EstadoActual.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/EstadoActual.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticControllerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/View/DomoticView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Model/DomoticModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/Simulador/SimuladorH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/EstadoActual.txt" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticControllerInterface.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Controller/DomoticController.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/View/DomoticView.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Model/DomoticModel.java" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/Simulador/SimuladorH.java" />
   </component>
 </project>
