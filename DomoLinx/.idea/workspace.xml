@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f980dc47-16c1-45c2-adb6-d4b07303e238" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" afterPath="$PROJECT_DIR$/src/Model/DomoticModelTest.java" />
-    </list>
+    <list default="true" id="f980dc47-16c1-45c2-adb6-d4b07303e238" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomoticModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DomoticModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DomoticModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="191" column="98" lean-forward="true" selection-start-line="191" selection-start-column="12" selection-end-line="191" selection-end-column="98" />
+            <state relative-caret-position="3872">
+              <caret line="181" column="57" lean-forward="true" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
               <folding>
                 <marker date="1498419742777" expanded="true" signature="2722:2723" ph="{...}" />
               </folding>
@@ -107,18 +104,18 @@
       <file leaf-file-name="DomoticView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/DomoticView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-844">
-              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="402">
+              <caret line="125" column="31" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomoticController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DomoticController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/DomoticController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="380">
+              <caret line="96" column="28" lean-forward="false" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1498419742766" expanded="true" signature="2625:2633" ph="{...}" />
@@ -1017,7 +1014,7 @@
       <workItem from="1498361142443" duration="824000" />
       <workItem from="1498362101620" duration="296000" />
       <workItem from="1498362460232" duration="2658000" />
-      <workItem from="1498420080799" duration="5590000" />
+      <workItem from="1498420080799" duration="6367000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;agregando algunos unit test&quot;">
       <created>1498175684359</created>
@@ -1167,7 +1164,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54590000" />
+    <option name="totallyTimeSpent" value="55367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1425,31 +1422,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DomoticController.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/DomoticModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="3872">
+          <caret line="181" column="57" lean-forward="true" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1498419742766" expanded="true" signature="2625:2633" ph="{...}" />
+            <marker date="1498419742777" expanded="true" signature="2722:2723" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/DomoticView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844">
-          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="402">
+          <caret line="125" column="31" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DomoticModel.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/DomoticController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="191" column="98" lean-forward="true" selection-start-line="191" selection-start-column="12" selection-end-line="191" selection-end-column="98" />
+        <state relative-caret-position="380">
+          <caret line="96" column="28" lean-forward="false" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="49" />
           <folding>
-            <marker date="1498419742777" expanded="true" signature="2722:2723" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1498419742766" expanded="true" signature="2625:2633" ph="{...}" />
           </folding>
         </state>
       </provider>
