@@ -4,26 +4,13 @@ import Model.DomoticModel;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
+import java.io.File;
 import static org.junit.Assert.*;
+
 public class DomoticControllerTest {
 
-    DomoticModel model= DomoticModel.getInstance();
-    DomoticController controlador= new DomoticController(model);
-
-    /*
-    @Before
-    public void setUp() throws Exception {
-        DomoticModel model= new DomoticModel();
-        DomoticController controlador= new DomoticController(model);
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        controlador = null;
-        model = null;
-    }
-*/
+    private DomoticModel model= DomoticModel.getInstance();
+    private DomoticController controlador= new DomoticController(model);
 
     @Test
     public void testSanitizarTemperatura(){
@@ -96,4 +83,16 @@ public class DomoticControllerTest {
         controlador.setearHumedad(35);
         assertEquals(35,model.getHumedadDeseada());
     }
-}
+
+    @Test
+    public void test_GenTxt(){
+        controlador.generarTxt();
+        try{Thread.sleep(1000);}
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
+        File f = new File("EstadoActual.txt");
+        assertTrue(f.exists());
+
+        }
+    }
