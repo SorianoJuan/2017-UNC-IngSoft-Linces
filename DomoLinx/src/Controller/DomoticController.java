@@ -78,10 +78,10 @@ public class DomoticController implements DomoticControllerInterface {
 
     public void generarTxt(){
         System.out.println("Generando .txt");
-        new File("../DomoLinx/EstadoActual.txt");
+        new File("EstadoActual.txt");
         PrintWriter printWriter = null;
          try {
-            printWriter = new PrintWriter("../DomoLinx/EstadoActual.txt");
+            printWriter = new PrintWriter("EstadoActual.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

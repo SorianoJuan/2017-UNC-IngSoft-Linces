@@ -1,7 +1,7 @@
 Temperatura medida por el sensor
-34
+30
 Humedad medida por el sensor
-65
+70
 Estado actual del AC
 OFF
 Estado actual de la estufa
