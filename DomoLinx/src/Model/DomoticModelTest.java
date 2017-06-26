@@ -66,4 +66,28 @@ public class DomoticModelTest {
          }
          assertTrue(model.getAC());
      }
+
+    @Test
+    public void testSetEstufa() {
+        model.setTemperaturaSensor(14);
+        model.setTemperaturaDeseada(26);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        assertTrue(model.getEstufa());
+    }
+
+        @Test
+        public void testSetHumidificador () {
+            model.setTemperaturaSensor(36);
+            model.setTemperaturaDeseada(70);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            assertTrue(model.getHumidificador());
+        }
 }
